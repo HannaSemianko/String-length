@@ -1,0 +1,20 @@
+Дана строка. Получите новую строку, вставив пробелы между буквами исходной строки.
+
+Напишите функцию с именем insertSpaces, которая принимает строку str в качестве аргумента и возвращает строку, 
+в которой между буквами вставлены пробелы.
+
+Пример:
+
+функция insertSpaces("abcde") должна возвратить "a b c d e".
+
+A string is given. Get a new string by inserting spaces between the letters of the original string.
+
+Write a function called insert Spaces that takes the string str as an argument and returns a string with spaces inserted between the letters.
+
+Example:
+
+the insertSpaces("abcde") function should return "a b c d e".
+
+function insertSpaces(str){
+return str.split("").join(" ");
+}
