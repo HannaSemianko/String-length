@@ -5,3 +5,16 @@ You should also account for '!', '?' and ' ' that are represented by '27', '28' 
 
 All inputs will be valid.
 
+function switcher(x){
+let alphabet = ' ?!abcdefghijklmnopqrstuvwxyz '.split('').reverse();
+let str = '';
+  for(let i = 0; i < x.length; i++){
+    str += alphabet[+x[i]];
+  }
+return str;
+}
+
+
+function switcher(x){
+  return x.map(i => '_zyxwvutsrqponmlkjihgfedcba!? '[i]).join('');
+}
