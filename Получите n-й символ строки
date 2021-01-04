@@ -1,0 +1,23 @@
+Дана строка. Получить ее n-ый символ.
+
+Напишите функцию с именем getCharacter, которая принимает строку str и число n в качестве аргументов и возвращает n-й символ строки. 
+Если в строке нет символа с таким индексом, вернуть "Error"
+
+Примеры:
+
+функция getCharacter("abcde", 2) должна возвратить c.
+функция getCharacter("abc", 5) должна возвратить "Error"
+
+A string is given. Get its nth character.
+
+Write a function called getcharacter that takes the string str and the number n as arguments and returns the nth character of the string. 
+If there is no character with this index in the string, return " Error"
+
+Examples:
+
+the getcharacter("abcde", 2) function should return c.
+the getcharacter("abc", 5) function should return " Error"
+
+function getCharacter(str, n){
+return str.length > n && n >= 0 ? str[n] : "Error";
+}
